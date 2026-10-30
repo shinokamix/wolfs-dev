@@ -9,15 +9,15 @@ module.exports = {
   },
   /* use https://admin.bro-js.ru/ to create config, navigations and features */
   navigations: {
-    "wolfs-dev.main": "/wolfs-dev",
+    "wolves-web.main": "/wolves-web",
   },
   features: {
-    "wolfs-dev": {
+    "wolves-web": {
       // add your features here in the format [featureName]: { value: string }
     },
   },
   config: {
-    "wolfs-dev.api": "/api",
+    "wolves-web.api": "/api",
   },
   // Укажите путь к кастомному HTML-шаблону для prom-режима или оставьте undefined
   htmlTemplatePath: undefined,
