@@ -9,7 +9,12 @@
         "build:prod": "npm run clean && brojs build",
         "clean": "rimraf dist",
         "compile": "brojs compile",
-        "prom": "npm run compile && brojs prom-server --port=8099"
+        "prom": "npm run compile && brojs prom-server --port=8099",
+        "lint": "oxlint --type-aware src",
+        "lint:fix": "oxlint --type-aware --fix src",
+        "typecheck": "tsc --noEmit",
+        "format": "oxfmt src",
+        "format:check": "oxfmt --check src"
     },
     "keywords": [],
     "type": "commonjs",
@@ -20,5 +25,11 @@
         "express": "^4.22.3",
         "react": "^18.3.1",
         "react-dom": "^18.3.1"
+    },
+    "devDependencies": {
+        "oxfmt": "^0.75.0",
+        "oxlint": "^1.90.0",
+        "oxlint-tsgolint": "^7.0.2005",
+        "typescript": "^7.0.2"
     }
 }
