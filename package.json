@@ -14,7 +14,8 @@
         "lint:fix": "oxlint --type-aware --fix src",
         "typecheck": "tsc --noEmit",
         "format": "oxfmt src",
-        "format:check": "oxfmt --check src"
+        "format:check": "oxfmt --check src",
+        "check": "npm run format:check && npm run lint && npm run typecheck"
     },
     "keywords": [],
     "type": "commonjs",
@@ -31,5 +32,10 @@
         "oxlint": "^1.90.0",
         "oxlint-tsgolint": "^7.0.2005",
         "typescript": "^7.0.2"
+    },
+    "overrides": {
+        "react-i18next": {
+            "typescript": "$typescript"
+        }
     }
 }
